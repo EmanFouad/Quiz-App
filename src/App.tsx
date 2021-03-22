@@ -173,7 +173,7 @@ function App() {
     {gameOver  &&
       <div className="flex justify-center items-center h-screen overflow-hidden">
         <div className="bg-white w-1/2 h-1/2 p-10  shadow-xl rounded-lg flex flex-col items-center">
-          <img className="w-40 mt-3" src="/logo.png" alt="logo"/> 
+          <img className="w-40 mt-3" src="/public/logo.png" alt="logo"/> 
           <button className="px-10 py-3 mt-4 shadow-xl rounded-md font-medium bg-secondary focus:outline-none" onClick={startTrivia}>Start</button>
         </div>
       </div>
