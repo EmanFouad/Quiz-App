@@ -6,6 +6,7 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/light-border.css';
 
+import logo from './svg/logo.png';
 import './App.css';
 import { fetchQuizQuestions, QuestionState , Difficulty } from './API';
 import QuestionCard from './components/QuestionCard';
@@ -173,7 +174,7 @@ function App() {
     {gameOver  &&
       <div className="flex justify-center items-center h-screen overflow-hidden">
         <div className="bg-white w-1/2 h-1/2 p-10  shadow-xl rounded-lg flex flex-col items-center">
-          <img className="w-40 mt-3" src="/logo.png" alt="logo"/> 
+          <img className="w-40 mt-3" src={logo} alt="logo"/> 
           <button className="px-10 py-3 mt-4 shadow-xl rounded-md font-medium bg-secondary focus:outline-none" onClick={startTrivia}>Start</button>
         </div>
       </div>
@@ -187,7 +188,7 @@ function App() {
     </Modal>
     {!gameOver && 
     <div className="md:container md:mx-auto mx-4 md:mt-20 mt-8">
-      <div className="md:flex md:justify-between">
+      <div className="md:flex md:justify-around">
           {!gameOver && 
           <div className="md:w-3/12 bg-white shadow-xl rounded-lg order-2 p-4 md:h-96 relative mb-4"> 
             <div className="flex justify-between mb-4">
